@@ -1,0 +1,158 @@
+@import "./normalize.css";
+
+$blue1: #009999;
+$blue2: #1D7373;
+$blue3: #006363;
+$blue4: #33CCCC;
+$blue5: #5CCCCC;
+
+$light: #F9F6F1;
+
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient($blue1, $blue2, $blue3, $blue4, $blue5);
+    background-repeat: no-repeat;
+}
+
+
+
+.wrapper {
+    margin: 20px auto;
+    width: 1000px;
+    border: 1px solid $light;
+    border-radius: 10px;
+    background: $light;
+    padding: 20px 40px;
+}
+
+header {
+
+    h1 {
+        font-size: 25px;
+        text-align: center;
+        color: $blue3;
+    }
+
+}
+
+nav {
+
+    margin-top: 50px;
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+
+        &:first-child {
+            margin-left: 30px;
+        }
+
+        &:last-child {
+            margin-right: 30px;
+        }
+    }
+
+}
+
+main {
+
+    margin-top: 70px;
+    margin-bottom: 40px;
+
+    .title {
+        text-align: center;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    font-style: italic;
+
+    p {
+        color: $blue2;
+    }
+}
+
+.link {
+
+    color: $blue2;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 1s;
+
+    box-sizing: border-box;
+    border-bottom: 1px rgba(0, 0, 0, 0) solid;
+    
+    &:hover {
+        border-bottom: 1px solid $blue3;
+    }
+
+}
+
+.aboutMe {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+
+    #avatar {
+        width: 250px;
+        border-radius: 28px;
+        margin-right: 70px;
+        box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    }
+
+    &-text {
+
+        text-align: justify;
+
+        ol {
+            padding: 0px 0px 0px 15px;
+        }
+
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-left: 60px;
+
+    &-item {
+        width: 300px;
+        height: 300px;
+
+        margin-bottom: 100px;
+        margin-right: 10px;
+
+        &_image {
+            width: 250px;
+            border-radius: 20px;
+            box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+.news {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        width: 300px;
+        height: 300px;
+
+        margin-bottom: 120px;
+        margin-left: 30px;
+
+        a {
+            display: inline-block;
+        }
+    }
+}
